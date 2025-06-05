@@ -38,6 +38,10 @@
             font-size: 1em; /* Grundschriftgröße */
         }
 
+        .link-item:hover {
+            background-color: #0056b3; /* Dunklerer Blauton beim Hover */
+        }
+
         .link-item:active {
             background-color: #0056b3; /* Dunklerer Blauton beim Antippen */
         }
@@ -49,18 +53,24 @@
 
         .checked::after {
             content: ' ✔'; /* Grüner Haken */
-            color: #ebe6e6;
+            color: #ffffff; /* Hakenfarbe auf reines Weiß ändern */
             font-weight: bold;
             position: absolute;
             right: 10px; /* Abstand vom rechten Rand */
+            font-size: 1.2em; /* Schriftgröße des Häkchens erhöhen */
         }
 
         #hiddenImage {
-            display: none; block-size: auto; /* Bild zunächst verstecken */
+            display: none; /* Bild zunächst verstecken */
             margin: 20px auto; /* Automatischer horizontaler Abstand für Zentrierung */
             max-width: 100%; /* Bild responsive machen */
             height: auto; /* Höhe automatisch anpassen, um das Seitenverhältnis zu wahren */
-           
+        }
+
+        .additional-text {
+            margin-top: 20px; /* Abstand nach oben */
+            color: #a9a9a9; /* Heller Grauton */
+            text-align: center; /* Zentrierter Text */
         }
 
         /* Responsive Schriftgröße */
@@ -79,9 +89,13 @@
     <h1>Click on the Links below, to unlock the Picture(s)</h1>
     
     <div class="link-container">
-        <a href="https://www.amazon.de" target="_blank" class="link-item" onclick="linkClicked(event, 'https://www.amazon.de', this)">Link 1</a>
-        <a href="https://www.example.com" target="_blank" class="link-item" onclick="linkClicked(event, 'https://www.example.com', this)">Link 2</a>
-        <a href="https://www.example.org" target="_blank" class="link-item" onclick="linkClicked(event, 'https://www.example.org', this)">Link 3</a>
+        <a href="https://www.example.com" target="_blank" class="link-item" onclick="linkClicked(event, 'https://www.example.com', this)">https://www.example.com</a>
+        <a href="https://www.example.com" target="_blank" class="link-item" onclick="linkClicked(event, 'https://www.example.com', this)">https://www.example.com</a>
+        <a href="https://www.example.com" target="_blank" class="link-item" onclick="linkClicked(event, 'https://www.example.com', this)">https://www.example.com</a>
+    </div>
+
+    <div class="additional-text">
+        Dear Adsterra Team this is a example. Please try it out. I have shown you the link for no missunderstanding normally I will hide them with Link1... Further Information in the Picture
     </div>
 
     <img id="hiddenImage" src="https://ik.imagekit.io/yw74lckr5/default-image.jpg?updatedAt=1748877874793" alt="Verstecktes Bild" />
