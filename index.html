@@ -6,7 +6,7 @@
     <title>Verstecktes Bild</title>
     <style>
         body {
-            font-family: Georgia, serif; /* Edlere Schriftart */
+            font-family: Georgia, serif; 
             margin: 20px;
             padding: 20px;
             background-color: #f4f4f4;
@@ -14,73 +14,73 @@
 
         h1 {
             text-align: center;
-            font-size: 1.5em; /* Kleinere Schriftgröße für den Titel */
-            margin-top: 100px; /* Abstand nach oben erhöhen */
+            font-size: 1.5em; 
+            margin-top: 100px;
         }
 
         .link-container {
             display: flex;
-            flex-direction: column; /* Links untereinander anordnen */
+            flex-direction: column; 
             align-items: center;
-            margin-top: 80px; /* Weiter nach unten verschieben */
+            margin-top: 80px; 
         }
 
         .link-item {
             margin: 10px 0;
             padding: 10px;
-            background-color: #007bff; /* Blaue Hintergrundfarbe */
+            background-color: #007bff; 
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            width: 80%; /* Links auf 80% der Breite setzen */
-            max-width: 300px; /* Maximale Breite der Links */
+            width: 80%; 
+            max-width: 300px; 
             text-align: center;
-            font-size: 1em; /* Grundschriftgröße */
+            font-size: 1em; 
         }
 
         .link-item:hover {
-            background-color: #0056b3; /* Dunklerer Blauton beim Hover */
+            background-color: #0056b3; 
         }
 
         .link-item:active {
-            background-color: #0056b3; /* Dunklerer Blauton beim Antippen */
+            background-color: #0056b3;
         }
 
         .checked {
             position: relative;
-            background-color: #28a745; /* Hintergrundfarbe auf grün ändern */
+            background-color: #28a745; 
         }
 
         .checked::after {
-            content: ' ✔'; /* Grüner Haken */
-            color: #ffffff; /* Hakenfarbe auf reines Weiß ändern */
+            content: ' ✔'; 
+            color: #ffffff; 
             font-weight: bold;
             position: absolute;
-            right: 10px; /* Abstand vom rechten Rand */
-            font-size: 1.2em; /* Schriftgröße des Häkchens erhöhen */
+            right: 10px; 
+            font-size: 1.2em; 
         }
 
         #hiddenImage {
-            display: none; /* Bild zunächst verstecken */
-            margin: 20px auto; /* Automatischer horizontaler Abstand für Zentrierung */
-            max-width: 100%; /* Bild responsive machen */
-            height: auto; /* Höhe automatisch anpassen, um das Seitenverhältnis zu wahren */
+            display: none; 
+            margin: 20px auto; 
+            max-width: 100%; 
+            height: auto;
         }
 
         .additional-text {
-            margin-top: 20px; /* Abstand nach oben */
-            color: #a9a9a9; /* Heller Grauton */
-            text-align: center; /* Zentrierter Text */
+            margin-top: 20px; 
+            color: #a9a9a9; 
+            text-align: center; 
         }
 
         /* Responsive Schriftgröße */
         @media (max-width: 600px) {
             h1 {
-                font-size: 1.2em; /* Kleinere Schriftgröße für Smartphones */
+                font-size: 1.2em; 
             }
 
             .link-item {
-                font-size: 0.9em; /* Kleinere Schriftgröße für Links auf Smartphones */
+                font-size: 0.9em; 
             }
         }
     </style>
@@ -106,17 +106,18 @@
         function linkClicked(event, link, element) {
             clickCount++;
 
-            // Öffne den Link in einem neuen Tab
+          
             window.open(link, '_blank');
 
-            // Füge die Klasse "checked" hinzu, um den Haken anzuzeigen
+           
             element.classList.add('checked');
 
             if (clickCount === 3) {
-                // Blende die Links und den Titel aus
+                
                 document.querySelector('h1').style.display = 'none';
                 document.querySelector('.link-container').style.display = 'none';
-                // Zeige das Bild an
+                document.querySelector('.additional-text').style.display = 'none';
+               
                 document.getElementById('hiddenImage').style.display = 'block';
             }
         }
