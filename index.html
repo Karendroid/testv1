@@ -90,6 +90,7 @@
         let clickCount = 0;
 
         function linkClicked(event, link, element) {
+            event.preventDefault();
             clickCount++;
 
             // Öffne den Link in einem neuen Tab
