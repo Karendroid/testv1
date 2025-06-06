@@ -55,13 +55,27 @@
             right: 10px;
         }
 
-        .hiddenImage {
+        .hiddenImage1 {
             display: none;
             margin: 20px auto;
             max-width: 100%;
             height: auto;
         }
 
+         .hiddenImage2 {
+            display: none;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+         .hiddenImage3 {
+            display: none;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+        
         @media (max-width: 600px) {
             h1 {
                 font-size: 1.2em;
@@ -82,9 +96,9 @@
         <a href="https://www.profitableratecpm.com/fm45meqf5?key=f59a35cca29316d5c297a3823ab8e0b0" target="_blank" class="link-item" onclick="linkClicked(event, 'https://www.profitableratecpm.com/fm45meqf5?key=f59a35cca29316d5c297a3823ab8e0b0', this)">Link 3</a>
     </div>
 
-    <img id="hiddenImage1" class="hiddenImage" src="https://ik.imagekit.io/yw74lckr5/default-image.jpg?updatedAt=1748877874793" alt="Verstecktes Bild 1" />
-    <img id="hiddenImage2" class="hiddenImage" src="https://ik.imagekit.io/yw74lckr5/default-image.jpg?updatedAt=1748877874793" alt="Verstecktes Bild 2" />
-    <img id="hiddenImage3" class="hiddenImage" src="https://ik.imagekit.io/yw74lckr5/default-image.jpg?updatedAt=1748877874793" alt="Verstecktes Bild 3" />
+    <img id="hiddenImage1"  src="https://ik.imagekit.io/yw74lckr5/default-image.jpg?updatedAt=1748877874793" alt="Verstecktes Bild 1" />
+    <img id="hiddenImage2"  src="https://ik.imagekit.io/yw74lckr5/default-image.jpg?updatedAt=1748877874793" alt="Verstecktes Bild 2" />
+    <img id="hiddenImage3"  src="https://ik.imagekit.io/yw74lckr5/default-image.jpg?updatedAt=1748877874793" alt="Verstecktes Bild 3" />
 
     <script>
         let clickCount = 0;
@@ -103,7 +117,9 @@
                 document.querySelector('h1').style.display = 'none';
                 document.querySelector('.link-container').style.display = 'none';
                 
-                document.getElementById('hiddenImage' + clickCount).style.display = 'block';
+                document.getElementById('hiddenImage1' + clickCount).style.display = 'block';
+                document.getElementById('hiddenImage2' + clickCount).style.display = 'block';
+                document.getElementById('hiddenImage3' + clickCount).style.display = 'block';
             }
         }
         
