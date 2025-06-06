@@ -55,7 +55,7 @@
             right: 10px;
         }
 
-        #hiddenImage {
+        .hiddenImage {
             display: none;
             margin: 20px auto;
             max-width: 100%;
@@ -87,9 +87,6 @@
     <img id="hiddenImage3" class="hiddenImage" src="https://ik.imagekit.io/yw74lckr5/default-image.jpg?updatedAt=1748877874793" alt="Verstecktes Bild 3" />
 
     <script>
-
-    type='text/javascript' src='//pl26854273.profitableratecpm.com/af/3b/bb/af3bbba8eee1941140db9058631eacaa.js'>
-        
         let clickCount = 0;
 
         function linkClicked(event, link, element) {
@@ -105,9 +102,14 @@
                 // Blende die Links und den Titel aus
                 document.querySelector('h1').style.display = 'none';
                 document.querySelector('.link-container').style.display = 'none';
+                
                 document.getElementById('hiddenImage' + clickCount).style.display = 'block';
             }
         }
+
+         <script type='text/javascript' src='//pl26854273.profitableratecpm.com/af/3b/bb/af3bbba8eee1941140db9058631eacaa.js'>
+        
     </script>
+    
 </body>
 </html>
