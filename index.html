@@ -6,7 +6,7 @@
     <title>Verstecktes Bild</title>
     <style>
         body {
-            font-family: Georgia, serif; 
+            font-family: Georgia, serif;
             margin: 20px;
             padding: 20px;
             background-color: #f4f4f4;
@@ -14,32 +14,28 @@
 
         h1 {
             text-align: center;
-            font-size: 1.5em; 
+            font-size: 1.5em;
             margin-top: 100px;
         }
 
         .link-container {
             display: flex;
-            flex-direction: column; 
+            flex-direction: column;
             align-items: center;
-            margin-top: 80px; 
+            margin-top: 80px;
         }
 
         .link-item {
             margin: 10px 0;
             padding: 10px;
-            background-color: #007bff; 
+            background-color: #007bff;
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            width: 80%; 
-            max-width: 300px; 
+            width: 80%;
+            max-width: 300px;
             text-align: center;
-            font-size: 1em; 
-        }
-
-        .link-item:hover {
-            background-color: #0056b3; 
+            font-size: 1em;
         }
 
         .link-item:active {
@@ -48,39 +44,31 @@
 
         .checked {
             position: relative;
-            background-color: #28a745; 
+            background-color: #28a745;
         }
 
         .checked::after {
-            content: ' ✔'; 
-            color: #ffffff; 
+            content: ' ✔';
+            color: #ebe6e6;
             font-weight: bold;
             position: absolute;
-            right: 10px; 
-            font-size: 1.2em; 
+            right: 10px;
         }
 
-        #hiddenImage {
-            display: none; 
-            margin: 20px auto; 
-            max-width: 100%; 
+        .hiddenImage {
+            display: none;
+            margin: 20px auto;
+            max-width: 100%;
             height: auto;
         }
 
-        .additional-text {
-            margin-top: 20px; 
-            color: #a9a9a9; 
-            text-align: center; 
-        }
-
-        /* Responsive Schriftgröße */
         @media (max-width: 600px) {
             h1 {
-                font-size: 1.2em; 
+                font-size: 1.2em;
             }
 
             .link-item {
-                font-size: 0.9em; 
+                font-size: 0.9em;
             }
         }
     </style>
@@ -89,16 +77,14 @@
     <h1>Click on the Links below, to unlock the Picture(s)</h1>
     
     <div class="link-container">
-        <a href="https://www.profitableratecpm.com/gdsb533bqi?key=21ef88d0008868c4eb51deb6d469015f" target="_blank" class="link-item" onclick="linkClicked(event, 'https://www.profitableratecpm.com/gdsb533bqi?key=21ef88d0008868c4eb51deb6d469015f', this)">https://www.profitableratecpm.com/...</a>
-        <a href="https://www.profitableratecpm.com/q1msizk2w?key=407da80914c54a3dc7d336ac726d2c29" target="_blank" class="link-item" onclick="linkClicked(event, 'https://www.profitableratecpm.com/q1msizk2w?key=407da80914c54a3dc7d336ac726d2c29', this)">https://www.profitableratecpm.com/...</a>
-        <a href="https://www.profitableratecpm.com/fm45meqf5?key=f59a35cca29316d5c297a3823ab8e0b0" target="_blank" class="link-item" onclick="linkClicked(event, 'https://www.profitableratecpm.com/fm45meqf5?key=f59a35cca29316d5c297a3823ab8e0b0', this)">https://www.profitableratecpm.com/...</a>
+        <a href="https://www.profitableratecpm.com/gdsb533bqi?key=21ef88d0008868c4eb51deb6d469015f" target="_blank" class="link-item" onclick="linkClicked(event, 'https://www.profitableratecpm.com/gdsb533bqi?key=21ef88d0008868c4eb51deb6d469015f', this)">Link 1</a>
+        <a href="https://www.profitableratecpm.com/q1msizk2w?key=407da80914c54a3dc7d336ac726d2c29" target="_blank" class="link-item" onclick="linkClicked(event, 'https://www.profitableratecpm.com/q1msizk2w?key=407da80914c54a3dc7d336ac726d2c29', this)">Link 2</a>
+        <a href="https://www.profitableratecpm.com/fm45meqf5?key=f59a35cca29316d5c297a3823ab8e0b0" target="_blank" class="link-item" onclick="linkClicked(event, 'https://www.profitableratecpm.com/fm45meqf5?key=f59a35cca29316d5c297a3823ab8e0b0', this)">Link 3</a>
     </div>
 
-    <div class="additional-text">
-        "Dear Adsterra Team, this is a example. Please try it out. I have shown you the link for no missunderstanding, normally I hide them with Link1, Link2 and Link3. The Pictures will be exclusive content from collobarations with photographer and Models. The photos will change over time to get more traffic. The traffic will come from my instagram magazine. The site is not working properly on the Smartphone because of this Info Text. I will fix it after the approval, hopefully." 
-    </div>
-
-    <img id="hiddenImage" src="https://ik.imagekit.io/fde6h0sqk/Unbenannt.PNG?updatedAt=1749156775373" alt="Verstecktes Bild" />
+    <img id="hiddenImage1" class="hiddenImage" src="https://ik.imagekit.io/yw74lckr5/default-image.jpg?updatedAt=1748877874793" alt="Verstecktes Bild 1" />
+    <img id="hiddenImage2" class="hiddenImage" src="https://ik.imagekit.io/yw74lckr5/another-image.jpg?updatedAt=1748877874793" alt="Verstecktes Bild 2" />
+    <img id="hiddenImage3" class="hiddenImage" src="https://ik.imagekit.io/yw74lckr5/yet-another-image.jpg?updatedAt=1748877874793" alt="Verstecktes Bild 3" />
 
     <script>
         let clickCount = 0;
@@ -106,21 +92,22 @@
         function linkClicked(event, link, element) {
             clickCount++;
 
-          
+            // Öffne den Link in einem neuen Tab
             window.open(link, '_blank');
 
-           
+            // Füge die Klasse "checked" hinzu, um den Haken anzuzeigen
             element.classList.add('checked');
 
+            // Zeige das entsprechende Bild an
+            document.getElementById('hiddenImage' + clickCount).style.display = 'block';
+
             if (clickCount === 3) {
-                
+                // Blende die Links und den Titel aus
                 document.querySelector('h1').style.display = 'none';
                 document.querySelector('.link-container').style.display = 'none';
-                document.querySelector('.additional-text').style.display = 'none';
-               
-                document.getElementById('hiddenImage').style.display = 'block';
             }
         }
     </script>
+    <script type='text/javascript' src='//pl26854273.profitableratecpm.com/af/3b/bb/af3bbba8eee1941140db9058631eacaa.js'></script>
 </body>
 </html>
