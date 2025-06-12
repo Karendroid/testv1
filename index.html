@@ -80,6 +80,25 @@
             }
         }
     </style>
+
+<style>
+  #inAppNotice {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #111;
+    color: #fff;
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 9999;
+    font-family: sans-serif;
+    text-align: center;
+  }
+</style>
+	
 </head>
 <body>
 
@@ -157,11 +176,41 @@
             }
         }
         
-    </script>          
+    </script>      
+
+
+	<!-- Hinweisbox -->
+<div id="inAppNotice">
+  ⚠️ You are using a In-App-Browser. <br>
+  <strong>Open the website in external Browser</strong>
+</div>
+
+<script>
+  (function() {
+    const ua = navigator.userAgent || navigator.vendor || window.opera;
+    const inAppPatterns = [
+      /FBAN/, /FBAV/,         // Facebook
+      /Instagram/,            // Instagram
+      /Messenger/,            // Messenger
+      /Line/,                 // LINE
+      /Twitter/,              // Twitter
+      /TikTok/,               // TikTok
+      /Snapchat/,             // Snapchat
+      /Reddit/,               // Reddit
+      /Telegram/              // Telegram
+    ];
+
+    if (inAppPatterns.some(pattern => pattern.test(ua))) {
+      document.getElementById('inAppNotice').style.display = 'block';
+    }
+  })();
+</script>
+
+
+	
 	<script data-cfasync="false" type='text/javascript' src='//supremesavvyswan.com/af/3b/bb/af3bbba8eee1941140db9058631eacaa.js'></script>
 	<script data-cfasync="false" type='text/javascript' src='//supremesavvyswan.com/e6/a1/bb/e6a1bbaee0c6d2ae03d96b70a9d1d116.js'></script>
 	
         <script data-cfasync="false" type="text/javascript" src="https://js.juicyads.com/jp.php?c=4464u223s2a4u4r2o2d463c494&u=https%3A%2F%2Fsupremesavvyswan.com%2Ffm45meqf5%3Fkey%3Df59a35cca29316d5c297a3823ab8e0b0"></script>
-
 </body>
 </html>
