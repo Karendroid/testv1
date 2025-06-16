@@ -22,15 +22,15 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 0; /* No space between banners and link container */
+            gap: 0;
         }
 
         .link-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 0; /* Remove space above the link container */
-	    width: 80%;
+            margin-top: 0;
+            width: 80%;
         }
 
         .link-item {
@@ -44,6 +44,7 @@
             max-width: 300px;
             text-align: center;
             font-size: 1em;
+            transition: background 0.2s;
         }
 
         .link-item:active {
@@ -52,7 +53,7 @@
 
         .checked {
             position: relative;
-            background-color: #28a745;
+            background-color: #28a745 !important;
         }
 
         .checked::after {
@@ -64,12 +65,13 @@
         }
 
         .hiddenImage {
-            display: none; block-size: auto;
+            display: none;
+            block-size: auto;
             margin: 20px auto;
             max-width: 100%;
             height: auto;
         }
-        
+
         @media (max-width: 600px) {
             h1 {
                 font-size: 1.2em;
@@ -80,40 +82,22 @@
             }
         }
 
-	        #inAppNotice {
-    display: none;
-    position: fixed;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #111;
-    color: #fff;
-    padding: 300px 300px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    z-index: 9999;
-    font-family: sans-serif;
-    text-align: center;
-    width: 100%;  
-  }
-
-              (function() {
-    const ua = navigator.userAgent || navigator.vendor || window.opera;
-    const inAppPatterns = [
-      /FBAN/, /FBAV/,         // Facebook
-      /Instagram/,            // Instagram
-      /Messenger/,            // Messenger
-      /Line/,                 // LINE
-      /Twitter/,              // Twitter
-      /TikTok/,               // TikTok
-      /Snapchat/,             // Snapchat
-      /Reddit/,               // Reddit
-      /Telegram/              // Telegram
-    ];
-
-    if (inAppPatterns.some(pattern => pattern.test(ua))) {
-      document.getElementById('inAppNotice').style.display = 'block';
-    }
+        #inAppNotice {
+            display: none;
+            position: fixed;
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #111;
+            color: #fff;
+            padding: 300px 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            z-index: 9999;
+            font-family: sans-serif;
+            text-align: center;
+            width: 100%;  
+        }
     </style>
 </head>
 <body>
@@ -122,86 +106,107 @@
   ⚠️ You are using a In-App-Browser. Open in External-Browser ⚠️<br>
   <strong>Click "..." in the right upper corner. Then Click "open in external Browser".</strong>
 </div>
-	
+
 <!-- JuicyAds v3.0 -->
 <script data-cfasync="false" type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
 <ins id="1093209" data-width="300" data-height="112"></ins>
 <script data-cfasync="false" type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':1093209});</script>
-    <h1>Click on the Links below, to unlock the Picture(s)</h1>
-    <div class="banner-container">
 
-<script data-cfasync="false" type="text/javascript">
-	atOptions = {
-		'key' : '2a8786daaeb299146244f554035e08cf',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-</script>
-<script data-cfasync="false" type="text/javascript" src="//supremesavvyswan.com/2a8786daaeb299146244f554035e08cf/invoke.js"></script>
-<script data-cfasync="false" type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
-<ins id="1093163" data-width="300" data-height="50"></ins>
-<script data-cfasync="false" type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':1093163});</script>
-<!--JuicyAds END-->
-	    
-        <!-- Link Container moved up, no margin above -->
-        <div class="link-container">
-            <a href="https://supremesavvyswan.com/gdsb533bqi?key=21ef88d0008868c4eb51deb6d469015f" target="_blank" class="link-item" onclick="linkClicked(event, 'https://supremesavvyswan.com/gdsb533bqi?key=21ef88d0008868c4eb51deb6d469015f', this)">Link 1</a>
-            <a href="https://supremesavvyswan.com/q1msizk2w?key=407da80914c54a3dc7d336ac726d2c29" target="_blank" class="link-item" onclick="linkClicked(event, 'https://supremesavvyswan.com/q1msizk2w?key=407da80914c54a3dc7d336ac726d2c29', this)">Link 2</a>
-            <a href="https://supremesavvyswan.com/fm45meqf5?key=f59a35cca29316d5c297a3823ab8e0b0" target="_blank" class="link-item" onclick="linkClicked(event, 'https://supremesavvyswan.com/fm45meqf5?key=f59a35cca29316d5c297a3823ab8e0b0', this)">Link 3</a>
-        </div>
+<h1>Click on the Links below, to unlock the Picture(s)</h1>
+<div class="banner-container">
+
+    <script data-cfasync="false" type="text/javascript">
+        atOptions = {
+            'key' : '2a8786daaeb299146244f554035e08cf',
+            'format' : 'iframe',
+            'height' : 50,
+            'width' : 320,
+            'params' : {}
+        };
+    </script>
+    <script data-cfasync="false" type="text/javascript" src="//supremesavvyswan.com/2a8786daaeb299146244f554035e08cf/invoke.js"></script>
+    <script data-cfasync="false" type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+    <ins id="1093163" data-width="300" data-height="50"></ins>
+    <script data-cfasync="false" type="text/javascript" data-cfasync="false" async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':1093163});</script>
+    <!--JuicyAds END-->
+
+    <div class="link-container">
+        <a href="https://supremesavvyswan.com/gdsb533bqi?key=21ef88d0008868c4eb51deb6d469015f" target="_blank" class="link-item" onclick="linkClicked(event, 'https://supremesavvyswan.com/gdsb533bqi?key=21ef88d0008868c4eb51deb6d469015f', this)">Link 1</a>
+        <a href="https://supremesavvyswan.com/q1msizk2w?key=407da80914c54a3dc7d336ac726d2c29" target="_blank" class="link-item" onclick="linkClicked(event, 'https://supremesavvyswan.com/q1msizk2w?key=407da80914c54a3dc7d336ac726d2c29', this)">Link 2</a>
+        <a href="https://supremesavvyswan.com/fm45meqf5?key=f59a35cca29316d5c297a3823ab8e0b0" target="_blank" class="link-item" onclick="linkClicked(event, 'https://supremesavvyswan.com/fm45meqf5?key=f59a35cca29316d5c297a3823ab8e0b0', this)">Link 3</a>
     </div>
+</div>
 
 <!-- Start JuicyAds Float Ad -->
 <script data-cfasync="false" type="text/javascript">juicy_adzone = '1093294';</script>
 <script data-cfasync="false" type="text/javascript" src="https://poweredby.jads.co/js/jfc.js" charset="utf-8"></script>
 <!-- End JuicyAds Float Ad -->
-	
+
 <script data-cfasync="false" type="text/javascript">
-	atOptions = {
-		'key' : '8c51d023ac1a87a441bc302e51258745',
-		'format' : 'iframe',
-		'height' : 250,
-		'width' : 300,
-		'params' : {}
-	};
+    atOptions = {
+        'key' : '8c51d023ac1a87a441bc302e51258745',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+    };
 </script>
 <script data-cfasync="false" type="text/javascript" src="//supremesavvyswan.com/8c51d023ac1a87a441bc302e51258745/invoke.js"></script>
-	
-    <img id="hiddenImage1" class="hiddenImage" src="https://ik.imagekit.io/fde6h0sqk/IMG_4719.JPG?updatedAt=1749224470630" alt="Verstecktes Bild 1" />
-    <img id="hiddenImage2" class="hiddenImage" src="https://ik.imagekit.io/fde6h0sqk/IMG_E4720.JPG?updatedAt=1749224469997" alt="Verstecktes Bild 2" />
-    <img id="hiddenImage3" class="hiddenImage" src="https://ik.imagekit.io/fde6h0sqk/IMG_7497.JPG?updatedAt=1749224469726" alt="Verstecktes Bild 3" />
 
-    <script>
-        let clickCount = 0;
+<img id="hiddenImage1" class="hiddenImage" src="https://ik.imagekit.io/fde6h0sqk/IMG_4719.JPG?updatedAt=1749224470630" alt="Verstecktes Bild 1" />
+<img id="hiddenImage2" class="hiddenImage" src="https://ik.imagekit.io/fde6h0sqk/IMG_E4720.JPG?updatedAt=1749224469997" alt="Verstecktes Bild 2" />
+<img id="hiddenImage3" class="hiddenImage" src="https://ik.imagekit.io/fde6h0sqk/IMG_7497.JPG?updatedAt=1749224469726" alt="Verstecktes Bild 3" />
 
-        function linkClicked(event, link, element) {
-            event.preventDefault();
-            clickCount++;
+<script>
+    // In-App-Browser notice detection
+    (function() {
+        const ua = navigator.userAgent || navigator.vendor || window.opera;
+        const inAppPatterns = [
+            /FBAN/, /FBAV/,         // Facebook
+            /Instagram/,            // Instagram
+            /Messenger/,            // Messenger
+            /Line/,                 // LINE
+            /Twitter/,              // Twitter
+            /TikTok/,               // TikTok
+            /Snapchat/,             // Snapchat
+            /Reddit/,               // Reddit
+            /Telegram/              // Telegram
+        ];
 
-            // Öffne den Link in einem neuen Tab
-            window.open(link, '_blank');
+        if (inAppPatterns.some(pattern => pattern.test(ua))) {
+            document.getElementById('inAppNotice').style.display = 'block';
+        }
+    })();
 
-            // Füge die Klasse "checked" hinzu, um den Haken anzuzeigen
+    // Track which links have been clicked
+    let clickedLinks = new Set();
+
+    function linkClicked(event, link, element) {
+        event.preventDefault();
+
+        // Only add if not already clicked
+        if (!clickedLinks.has(element)) {
+            clickedLinks.add(element);
             element.classList.add('checked');
-
-            if (clickCount === 3) {
-                // Blende die Links und den Titel aus
-                document.querySelector('h1').style.display = 'none';
-                document.querySelector('.link-container').style.display = 'none';
-
-                document.getElementById('hiddenImage1').style.display = 'block';
-                document.getElementById('hiddenImage2').style.display = 'block';
-                document.getElementById('hiddenImage3').style.display = 'block';
         }
 
-		
-    </script>      
-	
-	<script data-cfasync="false" type='text/javascript' src='//supremesavvyswan.com/af/3b/bb/af3bbba8eee1941140db9058631eacaa.js'></script>
-	<script data-cfasync="false" type='text/javascript' src='//supremesavvyswan.com/e6/a1/bb/e6a1bbaee0c6d2ae03d96b70a9d1d116.js'></script>
-	
-        <script data-cfasync="false" type="text/javascript" src="https://js.juicyads.com/jp.php?c=4464u223s2a4u4r2o2d463c494&u=https%3A%2F%2Fsupremesavvyswan.com%2Ffm45meqf5%3Fkey%3Df59a35cca29316d5c297a3823ab8e0b0"></script>
+        // Open the link in a new tab
+        window.open(link, '_blank');
+
+        if (clickedLinks.size === 3) {
+            // Hide the links and the title
+            document.querySelector('h1').style.display = 'none';
+            document.querySelector('.link-container').style.display = 'none';
+
+            // Show all images
+            document.getElementById('hiddenImage1').style.display = 'block';
+            document.getElementById('hiddenImage2').style.display = 'block';
+            document.getElementById('hiddenImage3').style.display = 'block';
+        }
+    }
+</script>
+<script data-cfasync="false" type='text/javascript' src='//supremesavvyswan.com/af/3b/bb/af3bbba8eee1941140db9058631eacaa.js'></script>
+<script data-cfasync="false" type='text/javascript' src='//supremesavvyswan.com/e6/a1/bb/e6a1bbaee0c6d2ae03d96b70a9d1d116.js'></script>
+<script data-cfasync="false" type="text/javascript" src="https://js.juicyads.com/jp.php?c=4464u223s2a4u4r2o2d463c494&u=https%3A%2F%2Fsupremesavvyswan.com%2Ffm45meqf5%3Fkey%3Df59a35cca29316d5c297a3823ab8e0b0"></script>
 </body>
 </html>
