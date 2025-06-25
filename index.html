@@ -77,10 +77,31 @@
             }
         }
 
+        #inAppNotice {
+            display: none;
+            position: fixed;
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #111;
+            color: #fff;
+            padding: 250px 250px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            z-index: 9999;
+            font-family: sans-serif;
+            text-align: center;
+            width: 100%;  
+        }
+        
     </style>
 </head>
 <body>
 
+    <div id="inAppNotice">
+  ⚠️ You are using a In-App-Browser. For full functionality open in External-Browser ⚠️<br>
+  <strong>Click "..." in the right upper corner. Then Click "open in external Browser".</strong>
+</div>
 
 <h1>Click on the Ads below, to unlock the Pictures</h1>
 
